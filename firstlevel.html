@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./main.js"></script>
-    <script src="./style.css"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Math Enchanter</title>
 </head>
 <body>
     <h1>Math Enchanter</h1>
-    <p class = 'level1Status'>Level 1 - Muggle Testing</p>
+    <p class = 'levelOneStatus'>Level 1 - Muggle Testing</p>
     <button class = 'resetButton'>Reset</button>
-<!-- hide this button next level - opacity until they pass then opacity is 1. -->
+    <h2 class="levelOne">Score: <span class = 'levelOnescore'>0</span></h2> 
+    <div id = 'levelOneContainer'>
+        <div class="space" id = 'zero' cellIndex = '0'></div>
+        <div class="space" id = 'one' cellIndex = '1'></div>
+        <div class="space" id = 'two' cellIndex = '2'>3</div>
+        <div class="space" id = 'three' cellIndex = '3'>+</div>
+        <div class="space" id = 'four' cellIndex = '4'></div>
+        <div class="space" id = 'five' cellIndex = '5'>6</div>
+    </div><br>
+    <input type = 'text' id = 'answer'></input>
+    <br>
+    <!-- hide this button next level - opacity until they pass then opacity is 1. -->
     <button class = 'nextLevel'>Next Level</button>
-    <div id = 'level1Container'>
-        <div class="space " cellIndex = '0'></div>
-        <div class="space " cellIndex = '1'></div>
-        <div class="space " cellIndex = '2'></div>
-        <div class="space " cellIndex = '3'></div>
-        <div class="space " cellIndex = '4'></div>
-        <div class="space " cellIndex = '5'></div>
-    </div>
 </body>
 </html>

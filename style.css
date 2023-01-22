@@ -2,6 +2,7 @@
     cursor:url(https://i.imgur.com/VJzQt4F.gif), auto;
 } */
 body {
+    border-top: 20px;
     font-family: Rockwell, Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
@@ -9,26 +10,36 @@ body {
     flex-direction: column;
     justify-content: center;
     /* not centering middle of page row-wise */
-    align-content: center;
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7e740078-f753-4701-a779-c7124d72087f/d6wp8hm-5dc070e2-7109-4933-9d0f-c0be507f94a0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdlNzQwMDc4LWY3NTMtNDcwMS1hNzc5LWM3MTI0ZDcyMDg3ZlwvZDZ3cDhobS01ZGMwNzBlMi03MTA5LTQ5MzMtOWQwZi1jMGJlNTA3Zjk0YTAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PIbTCigfiVS_14bSsQMB2BrJKjYX3kxtqhcYnMCWaB4");
-    background-size: cover;
-    /* image is showing one background size if it's full size screen, but when I split screen it's showing double background  */
+    align-items: center;
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7e740078-f753-4701-a779-c7124d72087f/d6wp8hm-5dc070e2-7109-4933-9d0f-c0be507f94a0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdlNzQwMDc4LWY3NTMtNDcwMS1hNzc5LWM3MTI0ZDcyMDg3ZlwvZDZ3cDhobS01ZGMwNzBlMi03MTA5LTQ5MzMtOWQwZi1jMGJlNTA3Zjk0YTAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PIbTCigfiVS_14bSsQMB2BrJKjYX3kxtqhcYnMCWaB4") no-repeat center center fixed;
+    /* background-size: cover;
+    image is showing one background size if it's full size screen, but when I split screen it's showing double background  */
+}
+.centerBody {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
 }
 h1 {
     text-shadow: 3px 2px 4px brown;
     color: rgb(255, 153, 0);
     font-style: italic;
     font-weight: bold;
+    height: 100%;
     /* text-decoration: underline; */
 }
 p {
     text-shadow: 3px 2px 4px black;
     font-weight: bold;
     font-size: 20px;
+    height: 100%;
 }
 .space {
     width: 75px;
-    height: 55px;
+    /* height: 55px; */
+    height: 100%;
     /* border: 2px solid; */
     font-size: 45px;
     color: black;
@@ -46,45 +57,56 @@ p {
     grid-template-columns:repeat(3, auto);
     background-color: white;
     box-shadow: 5px 2px 20px 12px black;
+    height: 100%;
 }
 .nextLevel {
     /* opacity: 1; */
     /* max-width: max-content; */
     display: flex;
-    align-self: center;
+    /* align-self: center; */
     justify-content: center;
     /* font-size: 20px;
     background-color: rgb(42, 246, 42);
     box-shadow: 5px 2px 20px 12px black; */
+    height: 100%;
 }
 .nextlevel, button {
     opacity: 1;
     max-width: max-content;
     display: flex;
-    align-self: center;
+    /* align-self: center; */
     justify-content: center;
     font-size: 20px;
     background-color: rgb(42, 246, 42);
     box-shadow: 5px 2px 20px 12px black;
+    height: 100%;
 }
 .resetButton {
     max-width: max-content;
     font-size: 16px;
     display: flex;
-    align-self: center;
+    /* align-self: center; */
     box-shadow: 5px 2px 20px 12px black;
+    /* height: 100%; */
+}
+.oneLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .levelOne {
-    display:inline-block;
+    /* display:inline-block; */
     text-shadow: 3px 2px 4px black;
     /* how do i put score and reset button in one-line? */
+    /* height: 100%; */
 }
 #answer {
     width: 225px;
-    height: 50px;
+    /* height: 50px; */
+    height: 100%;
     font-size: 40px;
     display: flex;
-    align-self: center;
+    /* align-self: center; */
     margin: -10px;
     outline: 2px solid black;
     box-shadow: 5px 2px 20px 12px black;

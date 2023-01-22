@@ -21,6 +21,7 @@
 ### This project was built using  [Node v18.x] and uses the following technologies:
 * [Github](https://github.com/) - For creating repository
 * [VSCode](https://code.visualstudio.com/) - For creating code (HTML, CSS, JS)
+* [Surge](https://surge.sh/) - To Upload HTML/CSS/JS files as a http Link
 
 ## ***Materials Used***
 ***
@@ -35,3 +36,4 @@
 ***
 ### Images: [Imgur](https://imgur.com/)
 ### Random Number Generation: [Random Number Function](https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array)
+### To Upload HTML/CSS/JS files as a Link: [Surge](https://surge.sh/)

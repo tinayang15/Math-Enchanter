@@ -16,3 +16,4 @@
 ## ***Credits***
 ***
 ### https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array
+### Link to Trello: https://trello.com/b/wdJRGJVe/project-1

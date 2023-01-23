@@ -43,7 +43,7 @@ const checkScore = () => {
     } else if (score >= 7) {
         let declareWinner = true;
         nextLevel.classList.add('nextStyle')
-        alert('Great job, you are now a Muggle Enchanter. Proceed to next level')
+        alert('Great job, you are now a Half-Blood. Proceed to the last level')
     }
 }
 
@@ -53,6 +53,11 @@ const checkWin = () => {
         score += 1;
         checkScore();
         scoreDisplay.innerText = score;
+        spaceOne.innerText = randomFirstNum()
+        spaceTwo.innerText = randomSecondNum()
+        spaceFive.innerText = randomSecondNum()
+        let firstNumber = `${spaceOne.innerText}${spaceTwo.innerText}`
+        sum = (parseInt(firstNumber) + parseInt(spaceFive.innerText))
         inputValue.value = '';
     } else {
         inputValue.value = '';

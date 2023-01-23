@@ -17,8 +17,48 @@ function randomSecondNum() {
 function randomFirstNum() {
     return Math.floor(Math.random() * 9) + 1;
 }
-spaceOne.innerText = randomFirstNum() 
+spaceOne.innerText = randomFirstNum()
 spaceTwo.innerText = randomSecondNum()
 spaceFive.innerText = randomSecondNum()
 let firstNumber = `${spaceOne.innerText}${spaceTwo.innerText}`
 let sum = (parseInt(firstNumber) + parseInt(spaceFive.innerText))
+
+//reset button
+resetButton.addEventListener('click', () => resetGame());
+
+function resetGame() {
+    location.reload()
+}
+
+//submitButton
+
+submitButton.addEventListener('click', () => {
+    checkWin()
+})
+
+//Check score function
+const checkScore = () => {
+    if (score < 7) {
+        console.log('keep playing')
+    } else if (score >= 7) {
+        let declareWinner = true;
+        nextLevel.classList.add('nextStyle')
+        alert('Great job, you are now a Muggle Enchanter. Proceed to next level')
+    }
+}
+
+// Check win function
+const checkWin = () => {
+    if (parseInt(inputValue.value) === sum) {
+        score += 1;
+        checkScore();
+        scoreDisplay.innerText = score;
+        inputValue.value = '';
+    } else {
+        inputValue.value = '';
+        alert('Wrong answer, please try again')
+    }
+}
+
+
+

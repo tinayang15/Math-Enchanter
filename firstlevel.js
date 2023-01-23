@@ -37,7 +37,13 @@ submitButton.addEventListener('click', () => {
 //Check score function
 
 const checkScore = () => {
-
+    if (score < 5) {
+        console.log('keep playing')
+    } else if (score >= 5) {
+        let declareWinner = true;
+        nextLevel.classList.add('nextStyle')
+        alert('Great job, you are now a Muggle Enchanter. Proceed to next level')
+    }
 
 }
 // Check win function

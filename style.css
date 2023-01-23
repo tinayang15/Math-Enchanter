@@ -11,113 +11,116 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-    .centerBody {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-    }
 
-    h1 {
-        text-shadow: 3px 2px 4px brown;
-        color: rgb(255, 153, 0);
-        font-style: italic;
-        font-weight: bold;
-    }
+.centerBody {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
 
-    p {
-        text-shadow: 3px 2px 4px black;
-        font-weight: bold;
-        font-size: 20px;
-    }
+h1 {
+    text-shadow: 3px 2px 4px brown;
+    color: rgb(255, 153, 0);
+    font-style: italic;
+    font-weight: bold;
+}
 
-    .space {
-        width: 75px;
-        height: 55px;
-        font-size: 45px;
-        color: black;
-    }
+p {
+    text-shadow: 3px 2px 4px black;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-    #levelOneContainer {
-        display: grid;
-        outline: 2px solid black;
-        width: 235px;
-        margin: auto;
-        padding: 10px 5px 0 5px;
-        grid-template-columns: repeat(3, auto);
-        background-color: white;
-        box-shadow: 5px 2px 20px 12px black;
-        height: 100%;
-    }
+.space {
+    width: 75px;
+    height: 55px;
+    font-size: 45px;
+    color: black;
+}
 
-    .nextlevel,
-    button {
-        display: none;
-        max-width: max-content;
-        font-size: 20px;
-        background-color: rgb(42, 246, 42);
-        box-shadow: 5px 2px 20px 12px black;
-    }
-    .nextStyle {
-        display: inline;
-    }
-    .resetButton {
-        max-width: max-content;
-        opacity: 1;
-        font-size: 20px;
-        display: flex;
-        box-shadow: 5px 2px 20px 12px black;
-        margin: 0px 25px;
-        background-color: red;
-    }
+#levelOneContainer {
+    display: grid;
+    outline: 2px solid black;
+    width: 235px;
+    margin: auto;
+    padding: 10px 5px 0 5px;
+    grid-template-columns: repeat(3, auto);
+    background-color: white;
+    box-shadow: 5px 2px 20px 12px black;
+    height: 100%;
+}
 
-    .resetNextButtons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+.nextlevel,
+button {
+    display: none;
+    max-width: max-content;
+    font-size: 20px;
+    background-color: rgb(42, 246, 42);
+    box-shadow: 5px 2px 20px 12px black;
+}
 
-    .levelOneScore {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+.nextStyle {
+    display: inline;
+}
 
-    .levelOne {
-        text-shadow: 3px 2px 4px black;
-        margin: 0px 90px 40px 90px;
-    }
+.resetButton {
+    max-width: max-content;
+    opacity: 1;
+    font-size: 20px;
+    display: flex;
+    box-shadow: 5px 2px 20px 12px black;
+    margin: 0px 25px;
+    background-color: red;
+}
 
-    .levelOneStatus {
-        margin: 0px 90px 40px 90px;
-    }
+.resetNextButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-    #answer {
-        width: 235px;
-        height: 50px;
-        height: 100%;
-        font-size: 40px;
-        /* margin: 0 -80px 0 0; */
-        outline: 2px solid black;
-        box-shadow: 5px 2px 20px 12px black;
-    }
+.levelOneScore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-    input {
-        text-align: right;
-    }
+.levelOne {
+    text-shadow: 3px 2px 4px black;
+    margin: 0px 90px 40px 90px;
+}
 
-    .submitAnswer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        /* align-content: space-around; */
-    }
+.levelOneStatus {
+    margin: 0px 90px 40px 90px;
+}
 
-    .submit {
-        margin: 0 -85px 0 10px;
-        display: flex;
-        justify-self: flex-end;
-        font-size: 20px;
-        opacity: 1;
-    }
+#answer {
+    width: 235px;
+    height: 50px;
+    height: 100%;
+    font-size: 40px;
+    /* margin: 0 -80px 0 0; */
+    outline: 2px solid black;
+    box-shadow: 5px 2px 20px 12px black;
+}
+
+input {
+    text-align: right;
+}
+
+.submitAnswer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* align-content: space-around; */
+}
+
+.submit {
+    margin: 0 -85px 0 10px;
+    display: flex;
+    justify-self: flex-end;
+    font-size: 20px;
+    opacity: 1;
+}

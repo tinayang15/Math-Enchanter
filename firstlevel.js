@@ -1,7 +1,6 @@
 //variables
 let spaceTwo = document.querySelector('#two')
 let spaceFive = document.querySelector('#five')
-let levelOnescore = document.querySelector('#levelOneScore')
 const resetButton = document.querySelector('.resetButton')
 const nextLevel = document.querySelector('.nextButton')
 let declareWinner = false

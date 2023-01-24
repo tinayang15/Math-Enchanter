@@ -7,7 +7,9 @@ let declareWinner = false
 let inputValue = document.getElementById('answer')
 let scoreDisplay = document.getElementById('levelOneScore')
 const submitButton = document.querySelector('.submit')
+let livesDisplay = document.getElementById('levelOneLives')
 let score = 0
+let lives = 3
 //make randomized number function math.floor and add it to the spaces id 2 and 6
 function randomNumbers() {
     return Math.floor(Math.random() * 9) + 0;
@@ -41,9 +43,8 @@ const checkScore = () => {
     } else if (score >= 5) {
         let declareWinner = true;
         nextLevel.classList.add('nextStyle')
-        alert('Great job, you are now a Muggle Enchanter. Proceed to next level')
+        alert('Sorting hat declares, you are now a Muggle Enchanter! Proceed to next level.')
     }
-
 }
 // Check win function
 
@@ -59,8 +60,19 @@ const checkWin = () => {
     } else {
         inputValue.value = '';
         alert('The sorting hat seems to be acting fickly, please replace the sorting hat on your head.')
+        lives -=1;
+        checkLives();
+        livesDisplay.innerText = lives;
     }
 }
 
-
+//check lives
+const checkLives = () => {
+    if (lives >=1) {
+        console.log(`You have ${lives} lives left.`)
+    } else if (lives <= 0) {
+        alert('Game Over')
+        resetGame()
+    }
+}
 

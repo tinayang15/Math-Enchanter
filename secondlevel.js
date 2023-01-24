@@ -43,7 +43,7 @@ const checkScore = () => {
     } else if (score >= 7) {
         let declareWinner = true;
         nextLevel.classList.add('nextStyle')
-        alert('Great job, you are now a Half-Blood. Proceed to the last level')
+        alert('Half-Blood Enchanter! Proceed to the last level.')
     }
 }
 

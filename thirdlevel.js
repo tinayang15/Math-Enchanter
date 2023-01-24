@@ -66,5 +66,9 @@ const checkWin = () => {
     } else {
         inputValue.value = '';
         alert('It seems your wand is acting sizzly, please try again')
+        if (setInterval === 3) {
+            alert('Game Over')
+            resetGame()
+        }
     }
 }

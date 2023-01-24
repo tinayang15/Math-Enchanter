@@ -1,7 +1,6 @@
-/* * {
-    cursor:url(https://i.imgur.com/VJzQt4F.gif), auto;
-} */
+
 body {
+    cursor:url(https://i.imgur.com/VJzQt4F.gif), pointer;
     font-family: Rockwell, Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
@@ -27,10 +26,10 @@ h1 {
     font-weight: bold;
 }
 
-p {
+p, h2, h3 {
     text-shadow: 3px 2px 4px black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .space {
@@ -89,11 +88,15 @@ button {
 
 .levelOne {
     text-shadow: 3px 2px 4px black;
-    margin: 0px 90px 40px 90px;
+    margin: 0px 10px 40px 50px;
 }
 
+.levelOneLife {
+    text-shadow: 3px 2px 4px black;
+    margin: 0px 90px 40px 50px;
+}
 .levelOneStatus {
-    margin: 0px 90px 40px 90px;
+    margin: 0px 90px 40px 50px;
 }
 
 #answer {

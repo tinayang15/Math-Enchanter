@@ -40,7 +40,7 @@ submitButton.addEventListener('click', () => {
 
 //Check score function
 const checkScore = () => {
-    if (score <8) {
+    if (score < 8) {
         console.log('keep playing')
     } else if (score >= 8) {
         let declareWinner = true;
@@ -59,9 +59,9 @@ const checkWin = () => {
         spaceTwo.innerText = randomSecondNum()
         spaceFour.innerText = randomFirstNum()
         spaceFive.innerText = randomSecondNum()
-        let firstNumber = `${spaceOne.innerText}${spaceTwo.innerText}`
-        let secondNumber = `${spaceFour.innerText}${spaceFive.innerText}`
-        let sum = (parseInt(firstNumber) + parseInt(secondNumber))
+        firstNumber = `${spaceOne.innerText}${spaceTwo.innerText}`
+        secondNumber = `${spaceFour.innerText}${spaceFive.innerText}`
+        sum = (parseInt(firstNumber) + parseInt(secondNumber))
         inputValue.value = '';
     } else {
         inputValue.value = '';

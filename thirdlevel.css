@@ -1,5 +1,5 @@
 body {
-    cursor:url(https://i.imgur.com/VJzQt4F.gif), auto;
+    cursor: url(https://i.imgur.com/VJzQt4F.gif), auto;
     font-family: Rockwell, Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
@@ -9,25 +9,32 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 .centerBody {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
-    margin-left: 600px;
+    margin-left: 450px;
 }
+
 h1 {
     text-shadow: 3px 2px 4px rgb(69, 20, 124);
     color: rgb(251, 251, 251);
     font-style: italic;
     font-weight: bold;
 }
-p {
+
+p,
+h1,
+h2,
+h3 {
     text-shadow: 3px 2px 4px rgb(69, 20, 124);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 }
+
 .space {
     width: 75px;
     height: 55px;
@@ -84,11 +91,16 @@ button {
 
 .levelThree {
     text-shadow: 3px 2px 4px rgb(69, 20, 124);
-    margin: 0px 90px 40px 90px;
+    margin: 0px 10px 40px 50px;
+}
+
+.levelThreeLife {
+    text-shadow: 3px 2px 4px black;
+    margin: 0px 90px 40px 50px;
 }
 
 .levelThreeStatus {
-    margin: 0px 90px 40px 90px;
+    margin: 0px 90px 40px 50px;
 }
 
 #answer {

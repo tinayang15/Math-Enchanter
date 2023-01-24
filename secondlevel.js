@@ -64,7 +64,7 @@ const checkWin = () => {
     } else {
         inputValue.value = '';
         alert('It seems your wand is acting sizzly, please try again')
-        lives -=1;
+        lives -= 1;
         checkLives();
         livesDisplay.innerText = lives;
     }
@@ -72,7 +72,7 @@ const checkWin = () => {
 
 //check lives
 const checkLives = () => {
-    if (lives >=1) {
+    if (lives >= 1) {
         console.log(`You have ${lives} lives left.`)
     } else if (lives <= 0) {
         alert('Game Over')

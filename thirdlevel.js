@@ -9,6 +9,8 @@ let declareWinner = false
 let inputValue = document.getElementById('answer')
 let scoreDisplay = document.getElementById('levelThreeScore')
 const submitButton = document.querySelector('.submit')
+let livesDisplay = document.getElementById('levelThreeLives')
+let lives = 3
 let score = 0
 
 //Randomized number function math.floor and add it to the spaces id 2 and 6
@@ -66,9 +68,18 @@ const checkWin = () => {
     } else {
         inputValue.value = '';
         alert('It seems your wand is acting sizzly, please try again')
-        if (setInterval === 3) {
-            alert('Game Over')
-            resetGame()
-        }
+        lives -= 1;
+        checkLives();
+        livesDisplay.innerText = lives;
+    }
+}
+
+//check lives
+const checkLives = () => {
+    if (lives >= 1) {
+        console.log(`You have ${lives} lives left.`)
+    } else if (lives <= 0) {
+        alert('Game Over')
+        resetGame()
     }
 }

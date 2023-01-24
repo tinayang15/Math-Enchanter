@@ -1,5 +1,5 @@
 body {
-    cursor:url(https://i.imgur.com/VJzQt4F.gif), auto;
+    cursor: url(https://i.imgur.com/VJzQt4F.gif), auto;
     font-family: Rockwell, Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
@@ -9,6 +9,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 .centerBody {
     display: flex;
     justify-content: center;
@@ -17,23 +18,29 @@ body {
     margin-top: 200px;
     margin-left: 600px;
 }
+
 h1 {
     text-shadow: 3px 2px 4px rgb(52, 39, 190);
     color: rgb(251, 251, 251);
     font-style: italic;
     font-weight: bold;
 }
-p, h2, h3 {
+
+p,
+h2,
+h3 {
     text-shadow: 3px 2px 4px rgb(52, 39, 190);
     font-weight: bold;
     font-size: 22px;
 }
+
 .space {
     width: 75px;
     height: 55px;
     font-size: 45px;
     color: rgb(52, 39, 190);
 }
+
 #levelTwoContainer {
     display: grid;
     outline: 2px solid rgb(52, 39, 190);
@@ -45,6 +52,7 @@ p, h2, h3 {
     box-shadow: 5px 2px 20px 12px rgb(52, 39, 190);
     height: 100%;
 }
+
 .nextlevel,
 button {
     display: none;
@@ -53,9 +61,11 @@ button {
     background-color: rgb(42, 246, 42);
     box-shadow: 5px 2px 20px 12px rgb(52, 39, 190);
 }
+
 .nextStyle {
     display: inline;
 }
+
 .resetButton {
     max-width: max-content;
     opacity: 1;
@@ -65,27 +75,33 @@ button {
     margin: 0px 25px;
     background-color: red;
 }
+
 .resetNextButtons {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .levelTwoScore {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .levelTwo {
     text-shadow: 3px 2px 4px rgb(52, 39, 190);
     margin: 0px 10px 40px 50px;
 }
+
 .levelTwoLife {
     text-shadow: 3px 2px 4px black;
     margin: 0px 90px 40px 50px;
 }
+
 .levelTwoStatus {
     margin: 0px 90px 40px 90px;
 }
+
 #answer {
     width: 235px;
     height: 50px;
@@ -94,14 +110,17 @@ button {
     outline: 2px solid rgb(52, 39, 190);
     box-shadow: 5px 2px 20px 12px rgb(52, 39, 190);
 }
+
 input {
     text-align: right;
 }
+
 .submitAnswer {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .submit {
     margin: 0 -85px 0 10px;
     display: flex;

@@ -58,7 +58,7 @@ const checkWin = () => {
         inputValue.value = '';
     } else {
         inputValue.value = '';
-        alert('Wrong answer, please try again')
+        alert('The sorting hat seems to be acting fickly, please replace the sorting hat on your head.')
     }
 }
 

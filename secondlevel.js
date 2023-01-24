@@ -61,7 +61,7 @@ const checkWin = () => {
         inputValue.value = '';
     } else {
         inputValue.value = '';
-        alert('Wrong answer, please try again')
+        alert('It seems your wand is acting sizzly, please try again')
     }
 }
 

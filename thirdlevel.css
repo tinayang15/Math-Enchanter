@@ -9,7 +9,29 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
+.cloud {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: url(https://i.imgur.com/nqpbROa.png)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: animate 120s linear infinite;
+}
+@keyframes animate {
+    50% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 5440px;
+    }
+}
 .centerBody {
     display: flex;
     justify-content: center;
@@ -26,10 +48,7 @@ h1 {
     font-weight: bold;
 }
 
-p,
-h1,
-h2,
-h3 {
+p, h2, h3 {
     text-shadow: 3px 2px 4px rgb(69, 20, 124);
     font-weight: bold;
     font-size: 22px;
@@ -54,8 +73,7 @@ h3 {
     height: 100%;
 }
 
-.nextlevel,
-button {
+.nextlevel, button {
     display: none;
     max-width: max-content;
     font-size: 20px;
@@ -129,3 +147,5 @@ input {
     font-size: 20px;
     opacity: 1;
 }
+
+

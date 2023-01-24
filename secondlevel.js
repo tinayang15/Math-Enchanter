@@ -8,7 +8,9 @@ let declareWinner = false
 let inputValue = document.getElementById('answer')
 let scoreDisplay = document.getElementById('levelTwoScore')
 const submitButton = document.querySelector('.submit')
+let livesDisplay = document.getElementById('levelTwoLives')
 let score = 0
+let lives = 3
 
 //Randomized number function math.floor and add it to the spaces id 2 and 6
 function randomSecondNum() {
@@ -62,8 +64,19 @@ const checkWin = () => {
     } else {
         inputValue.value = '';
         alert('It seems your wand is acting sizzly, please try again')
+        lives -=1;
+        checkLives();
+        livesDisplay.innerText = lives;
     }
 }
 
-
+//check lives
+const checkLives = () => {
+    if (lives >=1) {
+        console.log(`You have ${lives} lives left.`)
+    } else if (lives <= 0) {
+        alert('Game Over')
+        resetGame()
+    }
+}
 

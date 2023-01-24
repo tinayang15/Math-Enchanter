@@ -26,3 +26,14 @@ let firstNumber = `${spaceOne.innerText}${spaceTwo.innerText}`
 let secondNumber = `${spaceFour.innerText}${spaceFive.innerText}`
 let sum = (parseInt(firstNumber) + parseInt(secondNumber))
 
+//reset button
+resetButton.addEventListener('click', () => resetGame());
+
+function resetGame() {
+    location.reload()
+}
+
+//submitButton
+submitButton.addEventListener('click', () => {
+    checkWin()
+})

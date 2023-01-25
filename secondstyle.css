@@ -25,11 +25,11 @@ body {
     animation: animate 120s linear infinite;
 }
 @keyframes animate {
-    50% {
-        background-position: 0px;
+    from {
+        background-position: 0 0;
     }
-    100% {
-        background-position: 5440px;
+    to {
+        background-position: 100% 0;
     }
 }
 .centerBody {

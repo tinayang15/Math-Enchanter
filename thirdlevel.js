@@ -47,7 +47,7 @@ const checkScore = () => {
     } else if (score >= 8) {
         let declareWinner = true;
         nextLevel.classList.add('nextStyle')
-        alert('Congrats, you are now a Pure-Blood! Your next adventure awaits you (Update coming December 2023). Please feel free to retest your abilities as you wait.')
+        alert('Lumos! You have expelled all Darkness and Dementors, you are now a Pure-Blood Enchanter! Your next adventure awaits you (Update coming December 2023). Please feel free to retest your abilities as you wait.')
     }
 }
 
@@ -79,7 +79,7 @@ const checkLives = () => {
     if (lives >= 1) {
         console.log(`You have ${lives} lives left.`)
     } else if (lives <= 0) {
-        alert('Game Over')
+        alert('Enchants is now overrunned by Dementors. Return when you are ready to expel them!')
         resetGame()
     }
 }

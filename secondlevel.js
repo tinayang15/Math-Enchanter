@@ -45,7 +45,7 @@ const checkScore = () => {
     } else if (score >= 7) {
         let declareWinner = true;
         nextLevel.classList.add('nextStyle')
-        alert('Half-Blood Enchanter! Proceed to the last level.')
+        alert('Your skills are now a Half-Blood Enchanter! Proceed to the last level.')
     }
 }
 
@@ -63,7 +63,7 @@ const checkWin = () => {
         inputValue.value = '';
     } else {
         inputValue.value = '';
-        alert('It seems your wand is acting sizzly, please try again')
+        alert('It seems you are not prouncing your spells correctly. Please try again.')
         lives -= 1;
         checkLives();
         livesDisplay.innerText = lives;
@@ -75,7 +75,7 @@ const checkLives = () => {
     if (lives >= 1) {
         console.log(`You have ${lives} lives left.`)
     } else if (lives <= 0) {
-        alert('Game Over')
+        alert('Please retake your Enchanter classes again!')
         resetGame()
     }
 }

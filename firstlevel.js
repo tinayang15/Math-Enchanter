@@ -59,7 +59,7 @@ const checkWin = () => {
         inputValue.value = '';
     } else {
         inputValue.value = '';
-        alert('The sorting hat seems to be acting fickly, please replace the sorting hat on your head.')
+        alert('Your skills seems to be acting fickly, please solve the question asked.')
         lives -=1;
         checkLives();
         livesDisplay.innerText = lives;
@@ -71,7 +71,7 @@ const checkLives = () => {
     if (lives >=1) {
         console.log(`You have ${lives} lives left.`)
     } else if (lives <= 0) {
-        alert('Game Over')
+        alert('Your skills are weak, please return to Enchants when you are ready.')
         resetGame()
     }
 }

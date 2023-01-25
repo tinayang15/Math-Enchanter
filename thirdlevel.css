@@ -9,6 +9,20 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+.instructions {
+    position: fixed;
+    z-index: 1;
+    height: 375px;
+    width: 500px;
+    margin: 5vh 0vw 0vh 10vw;
+    background: rgb(0, 0, 0);
+    opacity: 0.7;
+    box-shadow: 5px 2px 20px 12px rgb(195, 15, 15);
+}
+.instructTitle{
+    color: rgb(234, 141, 141);
+}
+
 .cloud {
     position: fixed;
     z-index: -1;

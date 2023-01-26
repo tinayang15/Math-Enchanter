@@ -37,7 +37,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     animation: animate 120s linear infinite;
-    /* animation-play-state: running; */
 }
 @keyframes animate {
     from {

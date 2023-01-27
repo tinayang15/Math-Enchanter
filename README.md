@@ -35,9 +35,9 @@
 * Add subtaction, multiplication, and division levels
 ## ***Credits***
 ***
-### Images: [Imgur](https://imgur.com/), [Google](https://www.google.com/)
-### Random Number Generation: [Random Number Function](https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array)
-### Animation Background: [Animation Property](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
-### Cursor Using URL: [Cursor Property](https://css-tricks.com/almanac/properties/c/cursor/), [Cursor URL Property](https://stackoverflow.com/questions/9189250/animated-cursor-support-in-web-applications)
-### Z-Index Property: [Z-Index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+#### Images: [Imgur](https://imgur.com/), [Google](https://www.google.com/)
+#### Random Number Generation: [Random Number Function](https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array)
+#### Animation Background: [Animation Property](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+#### Cursor Using URL: [Cursor Property](https://css-tricks.com/almanac/properties/c/cursor/), [Cursor URL Property](https://stackoverflow.com/questions/9189250/animated-cursor-support-in-web-applications)
+#### Z-Index Property: [Z-Index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
 

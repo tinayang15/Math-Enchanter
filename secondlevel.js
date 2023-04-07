@@ -65,7 +65,7 @@ const checkWin = () => {
 const checkLives = () => {
     if (lives >= 1) {
     } else if (lives <= 0) {
-        alert('Please retake your Enchanter classes again!')
+        alert('You failed, please retake your Enchanter classes again!')
         resetGame()
     }
 }
